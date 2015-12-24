@@ -23,7 +23,8 @@ price:
 # Cooler examples:
 
 blogPost:
-  ♡: 2661
+  ♥: 2661
+  ✎: 121
 
 house.rooms[0].dimensions =
   m²: 20
