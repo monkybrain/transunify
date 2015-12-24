@@ -6,7 +6,7 @@ Transpiles uni*code* into CoffeeScript/JavasSript. Leaves valid cs/js characters
 ```
 # The following...
 
-price:
+price =
   $: 10
   €: 9.1
   £: 6.7
@@ -14,7 +14,7 @@ price:
   
 # ...should result in:
 
-price:
+price: =
   $: 10         # Yupp, as all jQuery and AngularJS users know, '$' is valid...
   x23: 9.1      # Option 1: hex
   d165: 6.7     # Option 2: decimal
@@ -22,7 +22,7 @@ price:
 
 # Cooler examples:
 
-blogPost:
+blogPost =
   ♥: 2661
   ✎: 121
 
