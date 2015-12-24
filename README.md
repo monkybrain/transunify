@@ -34,6 +34,9 @@ house.rooms[0].dimensions =
 for number in series
   ∑ += number
   
+reactions =
+  😊: 23
+  😡: 12
 
 ```
 
