@@ -4,7 +4,7 @@ Transpiles uni*code* into CoffeeScript/JavasSript. Leaves valid cs/js characters
 
 ### Example
 ```
-# The following
+# The following...
 
 price:
   $: 10
@@ -12,7 +12,7 @@ price:
   £: 6.7
   ¥: 1209
   
-# should result in:
+# ...should result in:
 
 price:
   $: 10         # Yupp, as all jQuery users know, '$' is valid...
