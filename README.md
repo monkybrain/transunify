@@ -23,8 +23,8 @@ price =
 # Cooler examples:
 
 blogPost =
-  ♥: 2661
-  ✎: 121
+  ♥: 2661       # likes
+  ✎: 121        # comments
 
 house.rooms[0].dimensions =
   m²: 20
@@ -35,8 +35,8 @@ for number in series
   ∑ += number
   
 reactions =
-  😊: 23
-  😡: 12
+  😊: 23        # happy
+  😡: 12        # angry
 
 ```
 
