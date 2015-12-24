@@ -27,6 +27,7 @@ blogPost:
 
 house.rooms[0].dimensions =
   m²: 20
+  ft²: 215.28
 
 ∑ = 0
 for number in series
