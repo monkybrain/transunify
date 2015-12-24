@@ -14,7 +14,7 @@ price =
   
 # ...should result in:
 
-price: =
+price =
   $: 10         # Yupp, as all jQuery and AngularJS users know, '$' is valid...
   x23: 9.1      # Option 1: hex
   d165: 6.7     # Option 2: decimal
