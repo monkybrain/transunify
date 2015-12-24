@@ -16,9 +16,19 @@ price =
 
 price =
   $: 10         # Yupp, as all jQuery and AngularJS users know, '$' is valid...
-  x23: 9.1      # Option 1: hex
+  x20AC: 9.1      # Option 1: hex
   d165: 6.7     # Option 2: decimal
   nYen: 1209    # Option 3: name
+  
+# Other example: show USD price in EUR
+$→€ = 10/9
+console.log price * $→€
+
+# JavaScript output:
+$_x2192_x20AC = 10/9
+console.log(price * $_x2192_x20AC)
+
+
 
 # Cooler examples:
 
