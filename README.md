@@ -22,22 +22,44 @@ price =
 
 # Cooler examples:
 
-blogPost =
-  ♥: 2661       # likes
-  ✎: 121        # comments
+console.log blog.posts[3]
+> {♥: 2661, ✎: 121}         # I realize you won't be able to output unicode characters to the console
 
-house.rooms[0].dimensions =
+# Sub/superscript
+room.size =
   m²: 20
   ft²: 215.28
+  
+# Gamepad
+if ↑ then jump
+if ↓ then crouch
+if ↓↘→ and 👊 then Ryu.hadouken()
 
+# Maths
 ∑ = 0
 for number in series
   ∑ += number
-  
-reactions =
-  😊: 23        # happy
-  😡: 12        # angry
 
+# Music
+melody = [
+  [ ♪('D'), ♪('G') ],
+  [ ♪('F'), ♪('Bb') ],
+  [ ♩('G'), ♩('C') ],
+]                       # Smoke on the water, in case you're wondering...
+
+# Making amends...
+friends.😊 += 1
+friends.😡 -= 1
+  
+# Getting rather silly now...
+clubs = 
+  ⤧: 'West Ham United'
+  £££: 'Manchester City'
+  ₽₽₽: 'Chelsea'
+  ⚠↓↓↓⚠: 'Aston Villa'
+  ☠: 'St Pauli'
+  🔫: 'Arsenal'
+  😈: 'Manchester United'
 ```
 
 ### Status
