@@ -16,7 +16,7 @@ price =
 
 price =
   $: 10         # Yupp, as all jQuery and AngularJS users know, '$' is valid...
-  x20AC: 9.1      # Option 1: hex
+  x20AC: 9.1    # Option 1: hex
   d165: 6.7     # Option 2: decimal
   nYen: 1209    # Option 3: name
   
@@ -32,8 +32,9 @@ console.log(price * $_x2192_x20AC)
 
 # Cooler examples:
 
-console.log blog.posts[3]
-> {♥: 2661, ✎: 121}         # I realize you won't be able to output unicode characters to the console
+# Likes and comments
+console.log blog.posts[3]    # I realize you won't be able to output
+> {♥: 2661, ✎: 121}          # unicode characters to the console
 
 # Sub/superscript
 room.size =
@@ -53,9 +54,9 @@ for number in series
 # Music
 melody = [
   [ ♪('D'), ♪('G') ],
-  [ ♪('F'), ♪('Bb') ],
-  [ ♩('G'), ♩('C') ],
-]                       # Smoke on the water, in case you're wondering...
+  [ ♪('F'), ♪('Bb') ],      # Smoke on the water,
+  [ ♩('G'), ♩('C') ],       # in case you're wondering...
+]                       
 
 # Making amends...
 friends.😊 += 1
