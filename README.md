@@ -1,8 +1,15 @@
-# uniscript
+# uniqode
 
-Transpiles uni*code* into CoffeeScript/JavasSript. Leaves valid cs/js characters unaffected.
+Transpiles uni*code* into CoffeeScript and adds a very thin layer of syntactic sugar to CoffeeScript.
 
-### Example
+### Main features
+* Allows source code to include any unicode character
+* Improved (or at least extended) dot and array notation (see examples below)
+
+### Unicode examples
+
+(this was written before I had the idea of improved dot notation...)
+
 ```
 # The following...
 
@@ -62,15 +69,21 @@ melody = [
 friends.😊 += 1
 friends.😡 -= 1
   
-# Getting rather silly now...
-clubs = 
-  ⤧: 'West Ham United'
-  £££: 'Manchester City'
-  ₽₽₽: 'Chelsea'
-  ⚠↓↓↓⚠: 'Aston Villa'
-  ☠: 'St Pauli'
-  🔫: 'Arsenal'
-  😈: 'Manchester United'
+```
+
+### Dot notation
+```
+# Replace dot with pipe for clarity and beauty (clarity == beauty)
+
+person.name = 'John'
+person | name = 'John'
+
+# Replace array [] with #
+blog.post[3].likes += 1
+blog | post #3 | ♥ += 1     # No white space allowed. 'post # 3' will result in comment ('# 3')
+
+# 
+
 ```
 
 ### Status
