@@ -3,15 +3,19 @@ log = (data) ->
 
 dictionary =
   syntax:
-    dot:
+    ###dot:
       pattern: /\s?\|\s?/g
+      output: '.'
+      process: (part) ->
+        part.replace this.pattern, this.output
+    arrow:
+      pattern: /\s?>>\s?/g
       output: '.'
       process: (part) ->
         part.replace this.pattern, this.output
     array:
       # pattern: /#\d(...)?\d\s/g
-      pattern: /#(\d+)|(-)(-)?\d?/g
-      output: '[]'
+      pattern: /\s?#(\d+)|(-)(-)?\d?/g
       process: (part) ->
         console.log "array"
         part = part.replace "#", "["
@@ -21,9 +25,13 @@ dictionary =
         # index = part.indexOf "\s"
         # log index
         # part = part.slice(0, index) + "]"
-        part
-
-    bOR:
+        part###
+    log:
+      pattern: /(^|\s)log /
+      output: "console.log "
+      process: (part) ->
+        part.replace this.pattern, this.output
+    ###bOR:
       pattern: /OR/g
       output: '|'
       process: (part) ->
@@ -32,6 +40,6 @@ dictionary =
       pattern: /AND/g
       output: '&'
       process: (part) ->
-        part.replace this.pattern, this.output
+        part.replace this.pattern, this.output###
 
 module.exports = dictionary

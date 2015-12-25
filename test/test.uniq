@@ -1,0 +1,51 @@
+price =
+  $: 10
+  €: 9.1
+  £: 6.7
+  ¥: 1209
+
+log price
+
+blog =
+  post:
+    ♥: 4
+
+blog.post.♥ += 1
+
+log "Likes: " + blog.post.♥
+
+$→€ = (input) ->
+  input * 10/9
+
+log $→€ 10
+
+gamepad =
+    ←: false
+    ↓: true
+    ↘: true
+    →: true
+
+☻ = {}
+☻.crouch = () ->
+  log "crouching..."
+
+if gamepad.↓ then ☻.crouch()
+
+
+
+# Math
+series = [1,2,3,4]
+∑ = 0
+for num in series
+  ∑ += num
+log ∑
+
+# Music
+♪ = (note) ->
+  log "Playing " + note + " for 0.05 seconds"
+♩ = (note) ->
+  log "Playing " + note + " for 0.1 seconds"
+
+♪ 'C'
+♪ 'E'
+♩ 'G'

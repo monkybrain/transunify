@@ -10,26 +10,22 @@
   /* PARSER */
 
   Parser = (function() {
-    var toDecimal;
-
     function Parser(dict) {
       this.dict = dict;
     }
 
-    toDecimal = function(code) {
-      return "_d" + code;
-    };
-
     Parser.prototype.unicode = function(line) {
-      var char, code, i, len, newLine;
+      var char, code, i, len, match, newLine, pattern;
       newLine = [];
+      pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>#\[\]]/;
       for (i = 0, len = line.length; i < len; i++) {
         char = line[i];
-        code = char.charCodeAt(0);
-        if (code > 256) {
-          newLine.push(toDecimal(code));
-        } else {
+        match = char.match(pattern);
+        if (match != null) {
           newLine.push(char);
+        } else {
+          code = char.charCodeAt(0);
+          newLine.push("_d" + code);
         }
       }
       return newLine.join("");

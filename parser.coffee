@@ -8,17 +8,17 @@ class Parser
   constructor: (dict) ->
     @dict = dict
 
-  toDecimal = (code) ->
-    "_d" + code
-
   unicode: (line) ->
     newLine = []
+    # Exlude valid cs/js chars
+    pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>#\[\]]/
     for char in line
-      code = char.charCodeAt(0)
-      if code > 256
-        newLine.push toDecimal(code)
-      else
+      match = char.match pattern
+      if match?
         newLine.push char
+      else
+        code = char.charCodeAt(0)
+        newLine.push "_d" + code
     newLine.join ""
 
   parse: (line) ->

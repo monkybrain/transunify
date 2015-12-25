@@ -1,0 +1,22 @@
+price =
+  $: 10
+  €: 9.1
+  £: 6.7
+  ¥: 1209
+
+console.log price
+
+blog =
+  post:
+    ♥: 4
+
+blog | post | ♥ += 1
+
+console.log blog
+
+
+price = 10
+
+$→€ = 10/9
+
+console.log price * $→€
