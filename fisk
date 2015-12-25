@@ -1,0 +1,14 @@
+price.€ = 10.9
+price | € = 10.7
+blog | post = 'fisk'
+blog|post='fisk'
+blog | post = 'fisk|pinne' and "blubb|fisk"
+'fisk|pinne' = fisk|pinne
+blog | post #3 = 'fisk'
+blog | post #13-24 = 'fisk'
+blog | post #4-
+blog | post #-4
+blog | post # 3... = 'fisk'
+blog | post #3 #4 = 'fisk'
+blog | post # comment
+(a OR b) AND c
