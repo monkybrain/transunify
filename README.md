@@ -77,10 +77,13 @@ friends.😡 -= 1
 
 person.name = 'John'
 person | name = 'John'
+person|name = 'John'
 
 # Replace array [] with #
 blog.post[3].likes += 1
-blog | post #3 | ♥ += 1     # No white space allowed. 'post # 3' will result in comment ('# 3')
+blog | post #3 | ♥ += 1     # No white space allowed with '#'. 'post # 3' will result in comment ('# 3')
+
+
 
 # 
 
