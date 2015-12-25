@@ -33,11 +33,6 @@
 
     Parser.prototype.parse = function(line) {
 
-      /*for entry, def of @dict.syntax
-        line = line.replace def.pattern, def.output
-      line
-       */
-
       /* FIND NON-STRING SECTIONS */
       var def, end, entry, i, index, irrelevant, j, len, len1, match, parsed, part, pattern, positions, ref, section, sections, start;
       pattern = /'|"/g;

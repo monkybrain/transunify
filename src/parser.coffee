@@ -23,13 +23,6 @@ class Parser
 
   parse: (line) ->
 
-    # Parse syntax
-    ###for entry, def of @dict.syntax
-      line = line.replace def.pattern, def.output
-    line###
-
-    # Parse syntax
-
     ### FIND NON-STRING SECTIONS ###
 
     # Define regular expression
@@ -72,6 +65,5 @@ class Parser
     line = @unicode line
 
     line
-
 
 module.exports = Parser

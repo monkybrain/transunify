@@ -1,13 +1,14 @@
 {
   "name": "uniqode",
   "version": "0.0.1",
-  "description": "Transpiles uni*code* into CoffeeScript and adds a very thin layer of syntactic sugar to CoffeeScript.",
-  "main": "js/uniqcode.js",
+  "description": "Transpiles uni*code* into valid CoffeeScript/JavaScript",
+  "main": "src/js/uniqode.js",
   "scripts": {
+    "start": "node src/js/uniqode.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "uniqode": "js/"
+    "uniqode": "src/js/uniqode"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/monkybrain/uniqode#readme",
   "dependencies": {
+    "colors": "^1.1.2",
     "linebyline": "^1.2.1",
     "yargs": "^3.31.0"
   }
