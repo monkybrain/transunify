@@ -4,90 +4,64 @@ Transpiles uni*code* into CoffeeScript and adds a very thin layer of syntactic s
 
 ### Main features
 * Allows source code to include any unicode character
-* Improved (or at least extended) dot and array notation (see examples below)
+* Improved (or at least extended) dot and array notation (not implemented yet...)
 
 ### Unicode examples
 
 (this was written before I had the idea of improved dot notation...)
 
-```
-# The following...
 
+### Source (test.uniq)
+
+```
 price =
   $: 10
   €: 9.1
   £: 6.7
   ¥: 1209
-  
-# ...should result in:
 
-price =
-  $: 10         # Yupp, as all jQuery and AngularJS users know, '$' is valid...
-  x20AC: 9.1    # Option 1: hex
-  d165: 6.7     # Option 2: decimal
-  nYen: 1209    # Option 3: name
-  
-# Other example: show USD price in EUR
-$→€ = 10/9
-console.log price * $→€
+log price
 
-# JavaScript output:
-$_x2192_x20AC = 10/9
-console.log(price * $_x2192_x20AC)
+blog =
+  post:
+    ♥: 4
 
+blog.post.♥ += 1
 
+log "Likes: " + blog.post.♥
 
-# Cooler examples:
+$→€ = (input) ->
+  input * 10/9
 
-# Likes and comments
-console.log blog.posts[3]    # I realize you won't be able to output
-> {♥: 2661, ✎: 121}          # unicode characters to the console
+log $→€ 10
 
-# Sub/superscript
-room.size =
-  m²: 20
-  ft²: 215.28
-  
-# Gamepad
-if ↑ then jump
-if ↓ then crouch
-if ↓↘→ and 👊 then Ryu.hadouken()
+gamepad =
+    ←: false
+    ↓: true
+    ↘: true
+    →: true
 
-# Maths
+☻ = {}
+☻.crouch = () ->
+  log "crouching..."
+
+if gamepad.↓ then ☻.crouch()
+
+# Math
+series = [1,2,3,4]
 ∑ = 0
-for number in series
-  ∑ += number
+for num in series
+  ∑ += num
+log ∑
 
 # Music
-melody = [
-  [ ♪('D'), ♪('G') ],
-  [ ♪('F'), ♪('Bb') ],      # Smoke on the water,
-  [ ♩('G'), ♩('C') ],       # in case you're wondering...
-]                       
+♪ = (note) ->
+  log "Playing " + note + " for 0.05 seconds"
+♩ = (note) ->
+  log "Playing " + note + " for 0.1 seconds"
 
-# Making amends...
-friends.😊 += 1
-friends.😡 -= 1
-  
+♪ 'C'
+♪ 'E'
+♩ 'G'`
 ```
-
-### Dot notation
-```
-# Replace dot with pipe for clarity and beauty (clarity == beauty)
-
-person.name = 'John'
-person | name = 'John'
-person|name = 'John'
-
-# Replace array [] with #
-blog.post[3].likes += 1
-blog | post #3 | ♥ += 1     # No white space allowed with '#'. 'post # 3' will result in comment ('# 3')
-
-
-
-# 
-
-```
-
-### Status
-Untested idea...
+### Result

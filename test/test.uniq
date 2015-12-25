@@ -31,7 +31,9 @@ gamepad =
 
 if gamepad.↓ then ☻.crouch()
 
-
+# Runic
+ᛖᚱᚤ = 'ᚤᚤᚤ'
+console.log ᛖᚱᚤ
 
 # Math
 series = [1,2,3,4]
