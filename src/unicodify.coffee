@@ -5,7 +5,6 @@ args = require("yargs").argv._
 # dictionary = require "./dictionary"
 Parser = require "./parser"
 
-
 # Helper
 log = (data) ->
   console.log data

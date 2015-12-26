@@ -1,6 +1,6 @@
 # unicodify
 
-Decodes unicode source files into valid CoffeeScript/JavaScript.
+Transcodes unicode source files into valid CoffeeScript/JavaScript.
 
 Might work with other languages too, such as Python (untested).
 
@@ -25,7 +25,7 @@ npm install -g unicodify
 ```
 
 ## Basic principle
-Decodes unicode characters in identifiers (object names etc.) into valid JavaScript. See examples below.
+Transcodes unicode characters in identifiers (object names etc.) into valid JavaScript. Ignores characters within strings. See examples below.
 ```
 # Input
 € = 10
