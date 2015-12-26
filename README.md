@@ -1,4 +1,4 @@
-# uncodify
+# unicodify
 
 Decodes unicode source files into valid CoffeeScript/JavaScript.
 
@@ -7,7 +7,7 @@ Might work with other languages too, such as Python (untested).
 ## Usage
 Simple as can be...
 ```
-uncodify <source> <output>
+unicodify <source> <output>
 ```
 **source (required)**
 
@@ -21,7 +21,7 @@ uncodify <source> <output>
 ## Installation
 Even simpler...
 ```
-npm install -g uncodify
+npm install -g unicodify
 ```
 
 ## Uses
@@ -69,15 +69,25 @@ room.dimensions =
   m³: 18 
 ```
 
-\# TODO: Add music notation...
+*Music*
+```
+♪ = (note) ->
+  play note, 100ms
+♩ = (note) ->
+  play note, 200ms
+
+♪ 'C'
+♪ 'E'
+♩ 'G'`
+```
 
 ### Levity
 Coding should be fun!
 
 *Runicode*
-```
+
 ᛖᚱᚤ = 'ᚤᚤᚤ'
-```
+
 
 *Farmcode*
 
@@ -94,9 +104,8 @@ farm =
 # TODO: Add persian poetry...
 ```
 
-
 Please help me expand this section!
 
 ### Competition
 
-I propose a competition for most creative use of this tool. Post your contribution at [/r/uncodify](https://www.reddit.com/r/uncodify) and let the up/downvoting begin!
+I propose a competition for the most creative use of this tool. Post your contributions to [/r/unicodify](https://www.reddit.com/r/unicodify) and let the up/downvoting begin!

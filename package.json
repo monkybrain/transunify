@@ -1,18 +1,18 @@
 {
-  "name": "uncodify",
-  "version": "0.0.3",
+  "name": "unicodify",
+  "version": "0.0.1",
   "description": "Decodes unicode source files into valid CoffeeScript/JavaScript",
-  "main": "src/js/uncodify.js",
+  "main": "src/js/unicodify.js",
   "scripts": {
-    "start": "node src/js/uncodify",
+    "start": "node src/js/unicodify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "uncodify": "src/js/uncodify.js"
+    "unicodify": "src/js/unicodify.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monkybrain/uncodify.git"
+    "url": "git+https://github.com/monkybrain/unicodify.git"
   },
   "keywords": [
     "unicode",
@@ -23,9 +23,9 @@
   "author": "monkybrain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/monkybrain/uncodify/issues"
+    "url": "https://github.com/monkybrain/unicodify/issues"
   },
-  "homepage": "https://github.com/monkybrain/uncodify#readme",
+  "homepage": "https://github.com/monkybrain/unicodify#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "linebyline": "^1.2.1",
