@@ -39,6 +39,7 @@ Code in your native tongue: arabic, chinese etc.
 ```
 ### Brevity
 Use unicode characters for brevity/clarity, e.g. to transfer notation from other domains.
+
 *Math*
 
 ```
