@@ -86,7 +86,6 @@ farm =
   🐑: 8
   🐓: 1
   🐔: 8
-  
 ```
 
 Please help me expand this section!
