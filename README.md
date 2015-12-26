@@ -24,6 +24,18 @@ Even simpler...
 npm install -g unicodify
 ```
 
+## Basic principle
+Decodes unicode characters in identifiers (object names etc.) into valid JavaScript. See examples below.
+```
+# Input
+€ = 10
+
+# Output
+_u8364: 10
+```
+
+See the [demo](/demo) for more examples.
+
 ## Uses
 I'm generally more of a **how** than a **why** type of guy but I can still think of some situations where this tool might come in handy. They range from the practical to the down right silly.
 
