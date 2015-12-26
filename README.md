@@ -38,8 +38,7 @@ Code in your native tongue: arabic, chinese etc.
 随机 = Math.random(10)
 ```
 ### Brevity
-Use unicode characters for brevity/clarity, e.g. to transfer notation from other domains to make code easier to read for non-programmers.
-
+Use unicode characters for brevity/clarity, e.g. to transfer notation from other domains.
 *Math*
 
 ```
@@ -68,6 +67,9 @@ room.dimensions =
   m²: 9
   m³: 18 
 ```
+
+\# TODO: Add music notation...
+
 ### Levity
 Coding should be fun!
 
