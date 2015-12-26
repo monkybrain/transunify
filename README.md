@@ -92,4 +92,4 @@ Please help me expand this section!
 
 ### Competition
 
-I propose a competition for most creative use of this tool. Post your contribution [here](https://www.reddit.com/me/m/transunify) and let the up/downvoting begin!
+I propose a competition for most creative use of this tool. Post your contribution [here](https://www.reddit.com/r/transunify) and let the up/downvoting begin!
