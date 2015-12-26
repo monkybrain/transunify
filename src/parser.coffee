@@ -62,7 +62,13 @@ class Parser
           parsed = def.process(part)
           line = line.replace part, parsed###
 
+    for section in sections
+      part = line[section.start...section.end]
+      decoded = @unicode part
+      line = line.replace part, decoded
+
+
     # Parse each section for unicode chars
-    @unicode line
+    line
 
 module.exports = Parser

@@ -1,6 +1,6 @@
 {
   "name": "unicodify",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Transcodes unicode source files into valid CoffeeScript/JavaScript",
   "main": "src/js/unicodify.js",
   "scripts": {
