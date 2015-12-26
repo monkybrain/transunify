@@ -1,3 +1,5 @@
+### THIS MODULE IS CURRENTLY NOT USED! ###
+
 # Helper
 log = (data) ->
   console.log data

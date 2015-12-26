@@ -11,14 +11,14 @@ class Parser
   unicode: (line) ->
     newLine = []
     # Exlude valid cs/js chars
-    pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>#\[\]]/
+    pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>%&!#\[\]]/
     for char in line
       match = char.match pattern
       if match?
         newLine.push char
       else
         code = char.charCodeAt(0)
-        newLine.push "_d" + code
+        newLine.push "_u" + code
     newLine.join ""
 
   parse: (line) ->
@@ -51,19 +51,18 @@ class Parser
       if start isnt end - 1
         sections.push start: start, end: end
 
+    ### CURRENTLY DISABLED ###
     # Parse each section for dictionary entries
-    for section in sections
+    ###for section in sections
       for entry, def of @dict.syntax
         part = line[section.start...section.end]
         match = part.match def.pattern
         if match?
         # parsed = part.replace def.pattern, def.output
           parsed = def.process(part)
-          line = line.replace part, parsed
+          line = line.replace part, parsed###
 
     # Parse each section for unicode chars
-    line = @unicode line
-
-    line
+    @unicode line
 
 module.exports = Parser

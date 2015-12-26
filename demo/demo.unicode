@@ -1,0 +1,52 @@
+price =
+  $: 10
+  €: 9.1
+  £: 6.7
+  ¥: 1209
+
+console.log price
+
+blog =
+  post: ♥: 4
+
+blog.post.♥ += 1
+
+console.log "Likes: " + blog.post.♥
+
+$→€ = (input) ->
+  input * 10/9
+
+console.log $→€ 10
+
+gamepad =
+    ←: false
+    ↓: true
+    ↘: true
+    →: true
+
+☻ = {}
+☻.crouch = () ->
+  console.log "crouching..."
+
+if gamepad.↓ then ☻.crouch()
+
+# Runic
+ᛖᚱᚤ = 'ᚤᚤᚤ'
+console.log ᛖᚱᚤ
+
+# Math
+series = [1,2,3,4]
+∑ = 0
+for num in series
+  ∑ += num
+console.log ∑
+
+# Music
+♪ = (note) ->
+  console.log "Playing " + note + " for 0.05 seconds"
+♩ = (note) ->
+  console.log "Playing " + note + " for 0.1 seconds"
+
+♪ 'C'
+♪ 'E'
+♩ 'G'

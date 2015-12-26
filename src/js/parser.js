@@ -17,7 +17,7 @@
     Parser.prototype.unicode = function(line) {
       var char, code, i, len, match, newLine, pattern;
       newLine = [];
-      pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>#\[\]]/;
+      pattern = /[\w\n\s\.:=\$\+\-\*\/\(\),"'\|{}<>%&!#\[\]]/;
       for (i = 0, len = line.length; i < len; i++) {
         char = line[i];
         match = char.match(pattern);
@@ -25,7 +25,7 @@
           newLine.push(char);
         } else {
           code = char.charCodeAt(0);
-          newLine.push("_d" + code);
+          newLine.push("_u" + code);
         }
       }
       return newLine.join("");
@@ -34,7 +34,7 @@
     Parser.prototype.parse = function(line) {
 
       /* FIND NON-STRING SECTIONS */
-      var def, end, entry, i, index, irrelevant, j, len, len1, match, parsed, part, pattern, positions, ref, section, sections, start;
+      var end, i, index, irrelevant, len, match, pattern, positions, sections, start;
       pattern = /'|"/g;
       positions = [0];
       while (true) {
@@ -58,21 +58,19 @@
           });
         }
       }
-      for (j = 0, len1 = sections.length; j < len1; j++) {
-        section = sections[j];
-        ref = this.dict.syntax;
-        for (entry in ref) {
-          def = ref[entry];
-          part = line.slice(section.start, section.end);
-          match = part.match(def.pattern);
-          if (match != null) {
-            parsed = def.process(part);
-            line = line.replace(part, parsed);
-          }
-        }
-      }
-      line = this.unicode(line);
-      return line;
+
+      /* CURRENTLY DISABLED */
+
+      /*for section in sections
+        for entry, def of @dict.syntax
+          part = line[section.start...section.end]
+          match = part.match def.pattern
+          if match?
+           * parsed = part.replace def.pattern, def.output
+            parsed = def.process(part)
+            line = line.replace part, parsed
+       */
+      return this.unicode(line);
     };
 
     return Parser;

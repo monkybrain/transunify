@@ -1,3 +1,19 @@
+# uniqode
+
+Transpiles uni*code* into CoffeeScript and adds a very thin layer of syntactic sugar to CoffeeScript.
+
+### Main features
+* Allows source code to include any unicode character
+* Improved (or at least extended) dot and array notation (not implemented yet...)
+
+### Unicode examples
+
+(this was written before I had the idea of improved dot notation...)
+
+
+### Source (test.uniq)
+
+```
 price =
   $: 10
   €: 9.1
@@ -31,10 +47,6 @@ gamepad =
 
 if gamepad.↓ then ☻.crouch()
 
-# Runic
-ᛖᚱᚤ = 'ᚤᚤᚤ'
-console.log ᛖᚱᚤ
-
 # Math
 series = [1,2,3,4]
 ∑ = 0
@@ -50,4 +62,6 @@ log ∑
 
 ♪ 'C'
 ♪ 'E'
-♩ 'G'
+♩ 'G'`
+```
+### Result
