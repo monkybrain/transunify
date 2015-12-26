@@ -1,0 +1,45 @@
+### NON-LATIN ALPHABETS ###
+
+# Arabic
+عشوائي = Math.random(10) 		# Wrong direction I suppose...
+
+# Chinese
+随机 = Math.random(10)
+
+### MATH ###
+
+# Sum
+∑ = 0
+for num in series
+  ∑ += num
+
+# Angle
+φ = 10
+x = r cos φ
+
+### UNITS ###
+
+# Currencies
+product.price =
+  $: 10
+  €: 9.1
+  £: 6.7
+  ¥: 1209
+
+# Super/subscript
+room.dimensions =
+  length: 3, width: 3, height: 2
+  m²: 9
+  m³: 18
+
+### RANDOM ###
+
+# Runicode
+ᛖᚱᚤ = 'ᚤᚤᚤ'
+
+# Farmcode
+farm =
+  🐄: 12
+  🐑: 8
+  🐓: 1
+  🐔: 8
