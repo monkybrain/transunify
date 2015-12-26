@@ -99,4 +99,4 @@ Please help me expand this section!
 
 ### Competition
 
-I propose a competition for most creative use of this tool. Post your contribution to [/r/uncodify/](https://www.reddit.com/r/uncodify) and let the up/downvoting begin!
+I propose a competition for most creative use of this tool. Post your contribution to [/r/uncodify](https://www.reddit.com/r/uncodify) and let the up/downvoting begin!
