@@ -2,7 +2,7 @@
 
 Decodes unicode source files into valid CoffeeScript/JavaScript.
 
-Might possibly work with other languages too, such as Python (untested).
+Might work with other languages too, such as Python (untested).
 
 ## Usage
 Simple as can be...
