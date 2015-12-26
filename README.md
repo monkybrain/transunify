@@ -79,7 +79,7 @@ Coding should be fun!
 ᛖᚱᚤ = 'ᚤᚤᚤ'
 ```
 
-*Farmicode*
+*Farmcode*
 
 ```
 farm =
