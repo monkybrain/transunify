@@ -1,13 +1,13 @@
-# transunify
+# uncodify
 
-**Trans**codes **uni**code source files into valid CoffeeScript/JavaScript.
+Decodes unicode source files into valid CoffeeScript/JavaScript.
 
-Possibly also other languages such as Python (untested).
+Might possibly work with other languages too, such as Python (untested).
 
 ## Usage
 Simple as can be...
 ```
-transunify <source> <output>
+uncodify <source> <output>
 ```
 **source (required)**
 
@@ -21,7 +21,7 @@ transunify <source> <output>
 ## Installation
 Even simpler...
 ```
-npm install -g transunify
+npm install -g uncodify
 ```
 
 ## Uses
@@ -89,8 +89,14 @@ farm =
   🐔: 8
 ```
 
+*Rumicode*
+```
+# Add persian poetry...
+```
+
+
 Please help me expand this section!
 
 ### Competition
 
-I propose a competition for most creative use of this tool. Post your contribution [here](https://www.reddit.com/r/transunify) and let the up/downvoting begin!
+I propose a competition for most creative use of this tool. Post your contribution [here](https://www.reddit.com/r/uncodify) and let the up/downvoting begin!

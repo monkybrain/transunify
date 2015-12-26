@@ -1,25 +1,25 @@
 {
-  "name": "transunify",
+  "name": "uncodify",
   "version": "0.0.1",
   "description": "Transcodes unicode source files into valid CoffeeScript/JavaScript",
-  "main": "src/js/uniqode.js",
+  "main": "src/js/uncodify.js",
   "scripts": {
-    "start": "node src/js/transunify.js",
+    "start": "node src/js/uncodify.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "transunify": "src/js/uniqode.js"
+    "uncodify": "src/js/uncodify.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/monkybrain/transunify.git"
+    "url": "git+https://github.com/monkybrain/uncodify.git"
   },
   "author": "monkybrain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/monkybrain/transunify/issues"
+    "url": "https://github.com/monkybrain/uncodify/issues"
   },
-  "homepage": "https://github.com/monkybrain/transunify#readme",
+  "homepage": "https://github.com/monkybrain/uncodify#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "linebyline": "^1.2.1",

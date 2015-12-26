@@ -2,7 +2,7 @@ readline = require "linebyline"
 colors = require "colors"
 fs = require "fs"
 args = require("yargs").argv._
-dictionary = require "./dictionary"
+# dictionary = require "./dictionary"
 Parser = require "./parser"
 
 
@@ -14,7 +14,8 @@ error = (data) ->
   console.error data.red
 
 # New parser
-parser = new Parser dictionary
+# parser = new Parser dictionary
+parser = new Parser()
 
 # Get filename(s)
 filename = {}
