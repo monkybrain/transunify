@@ -2,7 +2,7 @@
 
 **Trans**codes **uni**code source files into valid CoffeeScript/JavaScript.
 
-Possibly also other languages such as Python.
+Possibly also other languages such as Python (untested).
 
 ## Usage
 Simple as can be...
