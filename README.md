@@ -78,7 +78,7 @@ Coding should be fun!
 
 ᛖᚱᚤ = 'ᚤᚤᚤ'
 
-*Farmcode*
+*Farmicode*
 
 ```
 farm =
@@ -89,8 +89,8 @@ farm =
   
 ```
 
-(please fill in...)
+Please help me expand this section!
 
-### Competion
+### Competition
 
 I propose a competition for most creative use of this tool. Post your contribution [here](https://www.reddit.com/me/m/transunify) and let the up/downvoting begin!
