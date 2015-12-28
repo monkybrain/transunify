@@ -1,10 +1,10 @@
 ### NON-LATIN ALPHABETS ###
 
 # Arabic
-_u1593_u1588_u1608_u1575_u1574_u1610 = Math.random(10) 		# Wrong direction I suppose...
+_u1593_u1588_u1608_u1575_u1574_u1610 = Math.random() 		# Wrong direction I suppose...
 
 # Chinese
-_u38543_u26426 = Math.random(10)
+_u38543_u26426 = Math.random()
 
 ### MATH ###
 
@@ -35,7 +35,7 @@ room.dimensions =
 ### RANDOM ###
 
 # Runicode
-_u5846_u5809_u5796 = '_u5796_u5796_u5796'
+_u5846_u5809_u5796 = 'ᚤᚤᚤ'
 
 # Farmcode
 farm =

@@ -1,7 +1,7 @@
 ### NON-LATIN ALPHABETS ###
 
 # Arabic
-عشوائي = Math.random(10) 		# Wrong direction I suppose...
+عشوائي = Math.random() 		# Wrong direction I suppose...
 
 # Chinese
 随机 = Math.random()
