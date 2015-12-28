@@ -4,7 +4,7 @@
 عشوائي = Math.random(10) 		# Wrong direction I suppose...
 
 # Chinese
-随机 = Math.random(10)
+随机 = Math.random()
 
 ### MATH ###
 

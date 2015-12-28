@@ -4,27 +4,13 @@ Transcodes unicode source files into valid CoffeeScript/JavaScript.
 
 Might work with other languages too, such as Python (untested).
 
-## Usage
-Simple as can be...
-```
-unicodify <source> <output>
-```
-**source (required)**
+* [Basic principle]("/#principle")
+* Uses
+* Usage
+* Installation
+* Competetion
 
-- Unicode encoded source file
-
-**output (optional)**
-
-- File to be written
-- Will *echo* if unspecified
-
-## Installation
-Even simpler...
-```
-npm install -g unicodify
-```
-
-## Basic principle
+<a name="principle"></a>## Basic principle
 Transcodes unicode characters in identifiers (object names etc.) into valid JavaScript. Ignores characters within strings. See examples below.
 ```
 # Input
@@ -36,7 +22,7 @@ _u8364: 10
 
 See the [demo](/demo) for more examples.
 
-## Uses
+<a name="uses"></a>## Uses
 I'm generally more of a **how** than a **why** type of guy but I can still think of some situations where this tool might come in handy. They range from the practical to the down right silly.
 
 ### Native language coding
@@ -118,6 +104,26 @@ farm =
 
 Please help me expand this section!
 
-### Competition
+<a name="usage"></a>## Usage
+Simple as can be...
+```
+unicodify <source> <output>
+```
+**source (required)**
+
+- Unicode encoded source file
+
+**output (optional)**
+
+- File to be written
+- Will *echo* if unspecified
+
+<a name="installation"></a>## Installation
+Even simpler...
+```
+npm install -g unicodify
+```
+
+<a name="competition"></a>## Competition
 
 I propose a competition for the most creative use of this tool. Post your contributions to [/r/unicodify](https://www.reddit.com/r/unicodify) and let the up/downvoting begin!
