@@ -32,10 +32,10 @@ Code in your native tongue: arabic, chinese etc.
 
 ```
 # Arabic
-عشوائي = Math.random(10) 		# Wrong direction I suppose...
+عشوائي = Math.random() 		# Wrong direction I suppose...
 
 # Chinese
-随机 = Math.random(10)
+随机 = Math.random()
 ```
 ### Brevity
 Use unicode characters for brevity/clarity, e.g. to transfer notation from other domains.
@@ -72,9 +72,9 @@ room.dimensions =
 *Music*
 ```
 ♪ = (note) ->
-  play note, 100ms
+  play note, 100    # Play note for 100 ms
 ♩ = (note) ->
-  play note, 200ms
+  play note, 200    # Play note for twice as long
 
 ♪ 'C'
 ♪ 'E'
