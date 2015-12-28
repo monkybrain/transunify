@@ -1,7 +1,7 @@
 {
   "name": "unicodify",
-  "version": "0.0.7",
-  "description": "Transcodes unicode source files into valid CoffeeScript/JavaScript",
+  "version": "0.0.8",
+  "description": "Allows unicode characters in identifiers with CoffeeScript/JavaScript",
   "main": "src/js/unicodify.js",
   "scripts": {
     "start": "node src/js/unicodify",
@@ -15,10 +15,7 @@
     "url": "git+https://github.com/monkybrain/unicodify.git"
   },
   "keywords": [
-    "unicode",
-    "decode",
-    "transcode",
-    "coffeescript"
+    "unicode", "decode", "transcode", "identifiers", "monky", "coffeescript", "javascript"
   ],
   "author": "monkybrain",
   "license": "ISC",
