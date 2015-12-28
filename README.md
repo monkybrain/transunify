@@ -4,11 +4,11 @@ Transcodes unicode source files into valid CoffeeScript/JavaScript.
 
 Might work with other languages too, such as Python (untested).
 
-* [Basic principle]("/#principle")
-* [Uses]("/#uses")
-* [Usage]("/#usage")
-* [Install]("/#install")
-* [Competetion]("/#competition")
+* [Basic principle]("#principle")
+* [Uses]("#uses")
+* [Usage]("#usage")
+* [Install]("#install")
+* [Competetion]("#competition")
 
 <a name="principle"></a>
 ## Basic principle
