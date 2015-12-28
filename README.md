@@ -25,7 +25,7 @@ See the [demo](/demo) for more examples.
 
 <a name="uses"></a>
 ## Uses
-I'm generally more of a **how** than a **why** type of guy but I can still think of some situations where this tool might come in handy. They range from the practical to the down right silly.
+I'm generally more of a 'how' than a 'why' type of guy but I can still think of some situations where this tool might come in handy. They range from the practical to the down right silly.
 
 ### Native language coding
 Code in your native tongue: arabic, chinese etc.
@@ -84,12 +84,11 @@ room.dimensions =
 ### Levity
 Coding should be fun!
 
-*Runicode*
+**Runicode**
 
 ᛖᚱᚤ = 'ᛒᚤᛘ'
 
-
-*Farmcode*
+**Farmcode**
 
 farm =<br>
 &nbsp;&nbsp;🐄: 12<br>
@@ -97,7 +96,8 @@ farm =<br>
 &nbsp;&nbsp;🐓: 1<br>
 &nbsp;&nbsp;🐔: 6<br>
 
-*Rumicode*
+**Rumicode**
+
 ```
 # TODO: Add persian poetry...
 ```
