@@ -5,12 +5,13 @@ Transcodes unicode source files into valid CoffeeScript/JavaScript.
 Might work with other languages too, such as Python (untested).
 
 * [Basic principle]("/#principle")
-* Uses
-* Usage
-* Installation
-* Competetion
+* [Uses]("/#uses")
+* [Usage]("/#usage")
+* [Install]("/#install")
+* [Competetion]("/#competition")
 
-<a name="principle"></a>## Basic principle
+<a name="principle"></a>
+## Basic principle
 Transcodes unicode characters in identifiers (object names etc.) into valid JavaScript. Ignores characters within strings. See examples below.
 ```
 # Input
@@ -22,7 +23,8 @@ _u8364: 10
 
 See the [demo](/demo) for more examples.
 
-<a name="uses"></a>## Uses
+<a name="uses"></a>
+## Uses
 I'm generally more of a **how** than a **why** type of guy but I can still think of some situations where this tool might come in handy. They range from the practical to the down right silly.
 
 ### Native language coding
@@ -84,18 +86,16 @@ Coding should be fun!
 
 *Runicode*
 
-ᛖᚱᚤ = 'ᚤᚤᚤ'
+ᛖᚱᚤ = 'ᛒᚤᛘ'
 
 
 *Farmcode*
 
-```
-farm =
-  🐄: 12
-  🐑: 8
-  🐓: 1
-  🐔: 8
-```
+farm =<br>
+&nbsp;&nbsp;🐄: 12<br>
+&nbsp;&nbsp;🐑: 8<br>
+&nbsp;&nbsp;🐓: 1<br>
+&nbsp;&nbsp;🐔: 6<br>
 
 *Rumicode*
 ```
@@ -104,7 +104,8 @@ farm =
 
 Please help me expand this section!
 
-<a name="usage"></a>## Usage
+<a name="usage"></a>
+## Usage
 Simple as can be...
 ```
 unicodify <source> <output>
@@ -118,12 +119,14 @@ unicodify <source> <output>
 - File to be written
 - Will *echo* if unspecified
 
-<a name="installation"></a>## Installation
+<a name="install"></a>
+## Install
 Even simpler...
 ```
 npm install -g unicodify
 ```
 
-<a name="competition"></a>## Competition
+<a name="competition"></a>
+## Competition
 
 I propose a competition for the most creative use of this tool. Post your contributions to [/r/unicodify](https://www.reddit.com/r/unicodify) and let the up/downvoting begin!
